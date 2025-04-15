@@ -1,0 +1,11 @@
+framework module JSONKit {
+    umbrella header "JSONKit.h"
+    
+    export *
+    module * { export * }
+    
+    explicit module NSString_JSONKit {
+        header "NSString+JSONKit.h"
+        export *
+    }
+} 
