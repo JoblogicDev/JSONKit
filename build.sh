@@ -1,5 +1,17 @@
 #!/bin/bash
 
+# Install XcodeGen if not installed
+if ! command -v xcodegen &> /dev/null; then
+    brew install xcodegen
+fi
+
+# Check and install required dependencies
+echo "Checking required dependencies..."
+if ! command -v yq &> /dev/null; then
+    echo "Installing yq..."
+    brew install yq
+fi
+
 # Configuration
 SCHEME="JSONKit"
 FRAMEWORK_NAME="JSONKit"
@@ -50,3 +62,15 @@ ls -la "./build/${FRAMEWORK_NAME}.xcframework/ios-arm64/${FRAMEWORK_NAME}.framew
 ls -la "./build/${FRAMEWORK_NAME}.xcframework/ios-arm64_x86_64-simulator/${FRAMEWORK_NAME}.framework/Headers/"
 
 echo "Build completed successfully!" 
+
+# Configuration
+XC_FRAMEWORK_PATH="./build/${FRAMEWORK_NAME}.xcframework"
+# Get version from version.yml
+VERSION=$(yq e '.version' version.yml)
+echo "Version: $VERSION"
+# Define zip file name with version
+ZIP_FILE="${VERSION}-${FRAMEWORK_NAME}.xcframework.zip"
+echo "Creating zip file..."
+cd ./build
+zip -r "../${ZIP_FILE}" "${FRAMEWORK_NAME}.xcframework"
+cd ..
