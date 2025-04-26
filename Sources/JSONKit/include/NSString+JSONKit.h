@@ -2,7 +2,7 @@
 #define _NSString_JSONKit_h_
 
 #import <Foundation/Foundation.h>
-#import "JSONKit.h"
+#import <JSONKit/JSONKit.h>
 
 typedef NSUInteger JKParseOptionFlags;
 

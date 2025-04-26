@@ -4,7 +4,7 @@
 #define _JSONKIT_H_
 
 #import <Foundation/Foundation.h>
-#import "NSString+JSONKit.h"
+#import <JSONKit/NSString+JSONKit.h>
 
 typedef NSUInteger JKFlags;
 

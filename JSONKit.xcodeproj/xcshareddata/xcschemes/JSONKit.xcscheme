@@ -15,7 +15,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CF20C2AAF2803DB7F70D690C"
+               BlueprintIdentifier = "08C82F572DBCC7BE001938FB"
                BuildableName = "JSONKit.framework"
                BlueprintName = "JSONKit"
                ReferencedContainer = "container:JSONKit.xcodeproj">
@@ -50,7 +50,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CF20C2AAF2803DB7F70D690C"
+            BlueprintIdentifier = "08C82F572DBCC7BE001938FB"
             BuildableName = "JSONKit.framework"
             BlueprintName = "JSONKit"
             ReferencedContainer = "container:JSONKit.xcodeproj">

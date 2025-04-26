@@ -7,27 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E04565A5C6EC83F5E9B631B /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BF918493522FDB760A90A /* JSONKit.m */; };
-		34F2216FB2017AC27E33FFE9 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C556504DE35935546B8F857 /* JSONKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		881FCC396D7EEDE18E9611B1 /* NSString+JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B94A1C87F9BE83F2FD7C8652 /* NSString+JSONKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F1C7696003E83F702209EADA /* NSString+JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC1590D0979548FA2547A8D /* NSString+JSONKit.m */; };
+		08C82F612DBCC7DD001938FB /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BF918493522FDB760A90A /* JSONKit.m */; };
+		08C82F622DBCC7DD001938FB /* NSString+JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC1590D0979548FA2547A8D /* NSString+JSONKit.m */; };
+		08C82F632DBCC7EA001938FB /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C556504DE35935546B8F857 /* JSONKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08C82F642DBCC7EA001938FB /* NSString+JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B94A1C87F9BE83F2FD7C8652 /* NSString+JSONKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		080293AC2DBCBFF20097087C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08C82F582DBCC7BE001938FB /* JSONKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC1590D0979548FA2547A8D /* NSString+JSONKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSONKit.m"; sourceTree = "<group>"; };
 		6C556504DE35935546B8F857 /* JSONKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		9F81D463542D2E26710ADB0B /* JSONKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B94A1C87F9BE83F2FD7C8652 /* NSString+JSONKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JSONKit.h"; sourceTree = "<group>"; };
-		D473334F77541D562B898EBB /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		E22BF918493522FDB760A90A /* JSONKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08C82F552DBCC7BE001938FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		27CEAE11FAD33C559B977E64 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9F81D463542D2E26710ADB0B /* JSONKit.framework */,
+				08C82F582DBCC7BE001938FB /* JSONKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -44,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				6C556504DE35935546B8F857 /* JSONKit.h */,
-				D473334F77541D562B898EBB /* module.modulemap */,
 				B94A1C87F9BE83F2FD7C8652 /* NSString+JSONKit.h */,
 			);
 			path = include;
@@ -75,32 +83,36 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E998200D8008B8EC8B6BFCC3 /* Headers */ = {
+		08C82F532DBCC7BE001938FB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34F2216FB2017AC27E33FFE9 /* JSONKit.h in Headers */,
-				881FCC396D7EEDE18E9611B1 /* NSString+JSONKit.h in Headers */,
+				08C82F632DBCC7EA001938FB /* JSONKit.h in Headers */,
+				08C82F642DBCC7EA001938FB /* NSString+JSONKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CF20C2AAF2803DB7F70D690C /* JSONKit */ = {
+		08C82F572DBCC7BE001938FB /* JSONKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F8EB0E207F53EFCD22261DE /* Build configuration list for PBXNativeTarget "JSONKit" */;
+			buildConfigurationList = 08C82F5D2DBCC7BE001938FB /* Build configuration list for PBXNativeTarget "JSONKit" */;
 			buildPhases = (
-				E998200D8008B8EC8B6BFCC3 /* Headers */,
-				0B536504079F2C48CBBF6A01 /* Sources */,
+				08C82F532DBCC7BE001938FB /* Headers */,
+				08C82F542DBCC7BE001938FB /* Sources */,
+				08C82F552DBCC7BE001938FB /* Frameworks */,
+				08C82F562DBCC7BE001938FB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = JSONKit;
+			packageProductDependencies = (
+			);
 			productName = JSONKit;
-			productReference = 9F81D463542D2E26710ADB0B /* JSONKit.framework */;
+			productReference = 08C82F582DBCC7BE001938FB /* JSONKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +122,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					08C82F572DBCC7BE001938FB = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
 			};
 			buildConfigurationList = 88C7CE641C8EAC716DCC52D9 /* Build configuration list for PBXProject "JSONKit" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -124,66 +141,116 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CF20C2AAF2803DB7F70D690C /* JSONKit */,
+				08C82F572DBCC7BE001938FB /* JSONKit */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		08C82F562DBCC7BE001938FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		0B536504079F2C48CBBF6A01 /* Sources */ = {
+		08C82F542DBCC7BE001938FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E04565A5C6EC83F5E9B631B /* JSONKit.m in Sources */,
-				F1C7696003E83F702209EADA /* NSString+JSONKit.m in Sources */,
+				08C82F612DBCC7DD001938FB /* JSONKit.m in Sources */,
+				08C82F622DBCC7DD001938FB /* NSString+JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0A1A233E6B50844B1E96D617 /* Debug */ = {
+		08C82F5E2DBCC7BE001938FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_MODULES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CODE_SIGN_IDENTITY = "";
-				COPY_HEADERS_RUN_PHASE_PRIVATE = YES;
-				COPY_HEADERS_RUN_PHASE_PRODUCTS = YES;
-				COPY_HEADERS_RUN_PHASE_PUBLIC = YES;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = Sources/JSONKit/include;
-				INFOPLIST_KEY_CFBundlePackageType = FMWK;
-				INFOPLIST_KEY_CFBundleShortVersionString = 1.0.0;
-				INFOPLIST_KEY_CFBundleVersion = 1;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Joblogic. All rights reserved.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = Sources/JSONKit/include/module.modulemap;
-				PRIVATE_HEADERS_FOLDER_PATH = PrivateHeaders;
-				PRODUCT_BUNDLE_IDENTIFIER = com.joblogiclibrary.JSONKit;
-				PRODUCT_NAME = JSONKit;
-				PUBLIC_HEADERS_FOLDER_PATH = Headers;
-				PUBLIC_HEADERS_PATHS = Sources/JSONKit/include;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tracer.jsonkit.JSONKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = Sources/JSONKit/include;
 				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		08C82F5F2DBCC7BE001938FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tracer.jsonkit.JSONKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		7525E1E69FF7445E431051C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -211,7 +278,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -248,49 +315,6 @@
 			};
 			name = Debug;
 		};
-		AC662A4BB818BD69E5D301ED /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				COPY_HEADERS_RUN_PHASE_PRIVATE = YES;
-				COPY_HEADERS_RUN_PHASE_PRODUCTS = YES;
-				COPY_HEADERS_RUN_PHASE_PUBLIC = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = Sources/JSONKit/include;
-				INFOPLIST_KEY_CFBundlePackageType = FMWK;
-				INFOPLIST_KEY_CFBundleShortVersionString = 1.0.0;
-				INFOPLIST_KEY_CFBundleVersion = 1;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Joblogic. All rights reserved.";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = Sources/JSONKit/include/module.modulemap;
-				PRIVATE_HEADERS_FOLDER_PATH = PrivateHeaders;
-				PRODUCT_BUNDLE_IDENTIFIER = com.joblogiclibrary.JSONKit;
-				PRODUCT_NAME = JSONKit;
-				PUBLIC_HEADERS_FOLDER_PATH = Headers;
-				PUBLIC_HEADERS_PATHS = Sources/JSONKit/include;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = Sources/JSONKit/include;
-				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Release;
-		};
 		CDCF27CD1717CC174D0357A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -317,7 +341,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -350,11 +374,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F8EB0E207F53EFCD22261DE /* Build configuration list for PBXNativeTarget "JSONKit" */ = {
+		08C82F5D2DBCC7BE001938FB /* Build configuration list for PBXNativeTarget "JSONKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A1A233E6B50844B1E96D617 /* Debug */,
-				AC662A4BB818BD69E5D301ED /* Release */,
+				08C82F5E2DBCC7BE001938FB /* Debug */,
+				08C82F5F2DBCC7BE001938FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
